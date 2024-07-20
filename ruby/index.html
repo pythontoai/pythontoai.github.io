@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | ParkYoungJinRuby</title>
+    <title>Unity WebGL Player | RPGRuby</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">ParkYoungJinRuby</div>
+        <div id="unity-build-title">RPGRuby</div>
       </div>
     </div>
     <script>
@@ -62,8 +62,8 @@
         frameworkUrl: buildUrl + "/webgl.framework.js",
         codeUrl: buildUrl + "/webgl.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "ParkYoungJinRuby",
+        companyName: "banana",
+        productName: "RPGRuby",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
@@ -97,6 +97,7 @@
         canvas.style.height = "720px";
       }
 
+      canvas.style.background = "url('" + buildUrl + "/webgl.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
